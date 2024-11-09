@@ -5,19 +5,27 @@
 :root {
     --font: "Poppins";
     --font2: "Quicksand";
+
+    --accent-clr1: #371BF2;
+    --accent-clr2: #5A00BB;
+
+    --secondary-clr: #7155D9;
 }
 
 /* Light theme variables */
 :root {
     --bg-color: white;
+    --bg-color-alt: #C5C8D9;
 
     --font-color: rgb(24, 24, 24);
+    --font-color-alt: white;
 }
 
 .dark-theme {
     --bg-color: rgb(24, 24, 24);
 
-    --font-color: white;
+    --font-color: rgb(255, 255, 255);
+    --font-color-alt: black;
 }
 
 * {
@@ -36,21 +44,35 @@ body {
     color: var(--font-color);
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
 header {
+    grid-area: header;
+
     height: 60vh;
 
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
 
     background: lightskyblue url("../images/hero-image2.jpg") no-repeat scroll right / cover;
 
-    color: white;
+    color: var(--font-color-alt);
 }
 
 header .navigation{
     display: flex;
     justify-content: space-between;
 
-    margin: -10px;
+    margin: -15px;
     margin-bottom: 20px;
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.747), transparent);
@@ -77,4 +99,101 @@ header p {
     font-size: 1rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
 
+}
+
+main {
+    grid-area: main;
+}
+
+section {
+    padding: 15px;
+}
+
+.information {
+    margin-bottom: 30px;
+
+    font-size: 1rem;
+}
+
+.courses {
+    background-color: var(--bg-color-alt);
+}
+
+.courses h1 {
+    margin-bottom: 15px;
+
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.course {
+    height: 70vh;
+
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.479);
+
+    background-color: white;
+}
+
+.course .image {
+    height: 55%;
+
+    margin: -10px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+.course.psicology .image{
+    background: lightgoldenrodyellow url("../images/psicologia.jpg") no-repeat scroll center / cover;
+}
+.course.system-analist .image{
+    background: lightgoldenrodyellow url("../images/analista-de-sistemas2.jpg") no-repeat scroll center / cover;
+}
+.course.interior-design .image{
+    background: lightgoldenrodyellow url("../images/design-de-interiorres.jpg") no-repeat scroll center / cover;
+}
+
+.course h2 {
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+.course .button {
+    text-align: center;
+}
+
+.course .button button {
+    width: 75%;
+
+    cursor: pointer;
+
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--accent-clr1);
+
+    color: var(--font-color-alt);
+}
+
+footer {
+    grid-area: footer;
+
+    background-color: var(--secondary-clr);
+
+    text-align: center;
+}
+
+footer small {
+    padding: 8px;
+
+    font-size: 0.7rem;
+    color: var(--font-color-alt);
 }
