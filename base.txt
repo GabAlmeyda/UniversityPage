@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSIDADE</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/.css">
+
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Div for the CSS Grid Layout -->
+    <div class="wrapper">
+        <header>
+
+            <!-- Menu bar: contains the logo icon, the icon for switch themes and the menu icon -->
+            <div class="top-menu">
+
+                <!-- Logo icon -->
+                <a href="" id="logo">
+                    <span class="material-icons">book</span>
+                </a>
+
+                <!-- Light/dark mode icon -->
+                <span class="material-icons">wb_sunny</span>
+
+                <!-- Menu configuration -->
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu">
+                    <span class="material-icons">menu</span>
+                </label>
+                
+                <!-- Navigation bar -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="./pages/about.html">Sobre</a></li>
+                        <li><a href="./pages/courses.html">Cursos</a></li>
+                        <li><a href="./pages/contact.html">Contato</a></li>
+                        <li><a href="./pages/partnerships.html">Parcerias</a></li>
+                        <li><a href="./pages/localization.html">Localização</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+            <small>&copy;2024 UNIVERSIDADE. Todos os direitos reservados</small>
+        </footer>
+    </div>
+</body>
+</html>

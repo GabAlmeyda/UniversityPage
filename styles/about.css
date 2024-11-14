@@ -1,0 +1,66 @@
+@import url("./base.css");
+
+header {
+    height: 45vh;
+
+    background: var(--secondary-clr) no-repeat scroll left / cover;
+
+    text-align: left;
+    color: white;
+}
+
+header h1 {
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section.geral {
+    margin-top: -30px;
+
+    background-color: white;
+
+    color: black;
+}
+
+section.values {
+    background-color: var(--bg-color-alt);
+
+    color: black;
+}
+
+section img {
+    width: calc(100% + 30px);
+
+    margin-top: 45px;
+    margin-bottom: 15px;
+    margin-inline: -15px;
+}
+
+section .button {
+    margin: auto;
+
+    text-align: center;
+}
+
+section .button button {
+    cursor: pointer;
+
+    width: clamp(250px, 80%, 350px);
+
+    padding: 5px;
+    border-radius: 25px;
+    border: none;
+
+    background-color: var(--accent-clr2);
+
+    color: white;
+}
+section .button button:hover {
+    background-color: var(--accent-clr2-hover);
+}
+section .button button:active {
+    background-color: var(--accent-clr2-active);
+}

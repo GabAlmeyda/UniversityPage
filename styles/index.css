@@ -1,0 +1,162 @@
+@import url("./base.css");
+
+.information {
+    margin-bottom: 30px;
+
+    font-size: 1rem;
+}
+
+.courses {
+    background-color: var(--bg-color-alt);
+}
+
+.courses h1 {
+    margin-bottom: 20px;
+
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.course {
+    height: 450px;
+    width: clamp(300px, 100%, 400px);
+
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.479);
+
+    background-color: white;
+}
+
+.course .image {
+    height: 55%;
+
+    margin: -10px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
+}
+
+.course.psicology .image{
+    background: lightgoldenrodyellow url("../images/psicologia.jpg") no-repeat scroll center / cover;
+}
+.course.system-analist .image{
+    background: lightgoldenrodyellow url("../images/analista-de-sistemas.jpg") no-repeat scroll center / cover;
+}
+.course.interior-design .image{
+    background: lightgoldenrodyellow url("../images/design-de-interiorres.jpg") no-repeat scroll center / cover;
+}
+
+.course h2 {
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+.course .button {
+    text-align: center;
+}
+
+.course .button button {
+    width: 75%;
+
+    cursor: pointer;
+
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--accent-clr2);
+
+    color: var(--font-color-alt);
+}
+
+.course .button button:hover {
+    background-color: var(--accent-clr2-hover);
+}
+.courses .button button:active {
+    background-color: var(--accent-clr2-active);
+}
+
+.courses > h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.courses .CTA-courses {
+    width: clamp(250px, 80%, 350px);
+
+    cursor: pointer;
+
+    margin-inline: calc(
+        (100% - clamp(250px, 80%, 350px)) / 2
+    );
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+
+    background-color: var(--accent-clr1);
+
+    color: white;
+}
+
+.courses .CTA-courses:hover {
+    background-color: var(--accent-clr1-hover);
+}
+.courses .CTA-courses:active {
+    background-color: var(--accent-cl1-active);
+}
+
+.invitation .bottom-image {
+    height: 60vh;
+
+    margin: -15px;
+    margin-bottom: 15px;
+
+    background: lightgoldenrodyellow url("../images/transformacao.jpg") no-repeat scroll center / cover;
+}
+
+.invitation .bottom-image h1 {
+    padding-top: 15px;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.61), transparent);
+
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.61);
+}
+
+.invitation .CTA-form {
+    width: clamp(250px, 80%, 350px);
+
+    cursor: pointer;
+
+    margin-inline: calc(
+        (100% - clamp(250px, 80%, 350px)) / 2
+    );
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+
+    background-color: var(--accent-clr1);
+
+    color: white;
+}
+
+.invitation .CTA-form:hover {
+    background-color: var(--accent-clr1-hover);
+}
+.invitation .CTA-form:active {
+    background-color: var(--accent-cl1-active);
+}
