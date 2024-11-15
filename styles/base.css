@@ -222,18 +222,21 @@ section {
 }
 
 footer {
-    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    margin-bottom: -30px;
+    grid-area: footer;
+    height: 40px;
 
     background-color: var(--secondary-clr);
 
-    text-align: center;
+    line-height: 1;
 }
 
-footer small {
-    padding: 8px;
 
-    font-size: 0.7rem;
+footer small{
+    text-align: center;
     color: var(--font-color-alt);
+    font-size: 0.7rem;
 }
