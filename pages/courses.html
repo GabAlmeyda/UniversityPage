@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSIDADE</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/courses.css">
+
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Div for the CSS Grid Layout -->
+    <div class="wrapper">
+        <header>
+
+            <!-- Menu bar: contains the logo icon, the icon for switch themes and the menu icon -->
+            <div class="top-menu">
+
+                <!-- Logo icon -->
+                <a href="/index.html" id="logo">
+                    <span class="material-icons">book</span>
+                </a>
+
+                <!-- Light/dark mode icon -->
+                <span class="material-icons">wb_sunny</span>
+
+                <!-- Menu configuration -->
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu">
+                    <span class="material-icons">menu</span>
+                </label>
+                
+                <!-- Navigation bar -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="./about.html">Sobre</a></li>
+                        <li><a href="./courses.html">Cursos</a></li>
+                        <li><a href="./contact.html">Contato</a></li>
+                        <li><a href="./localization.html">Localização</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1>O futuro que deseja está ao seu alcance.</h1>
+        </header>
+
+        <main>
+
+            <!-- The select input  -->
+            <section class="select-input">
+                <label for="opcoes">Escolha dentre um dos nossos cursos abaixo para ver mais informações à respeito.</label>
+                <select name="opcoes" id="opcoes">
+                    <option value="disabled" disabled selected>Escolha uma opção</option>
+                    <option value="system-analist">Analista de Sistemas</option>
+                    <option value="design">Design de Interiores</option>
+                    <option value="web-dev">Desenvolvedor de Sistemas</option>
+                    <option value="engineer">Engenheiro</option>
+                    <option value="psicology">Psicologia</option>
+                </select>
+            </section>
+
+            <!-- All courses avaliable, initially hidden -->
+            <section class="courses-wrapper">
+                <div class="course" id="system-analist">
+                    <img src="../images/analista-de-sistemas.jpg" alt="Pessoa trabalhando num computador">
+                    <h2>Analista de Sistemas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis iure explicabo et impedit praesentium, quidem velit aut, assumenda ipsa ducimus! Voluptatem delectus fugiat vitae in. Impedit quasi asperiores velit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex doloremque reiciendis incidunt architecto ducimus magnam dolores optio sit doloribus. Nam hic rem at incidunt atque ut est nisi? Consequatur non commodi iure beatae nesciunt, ab, eaque error illum ipsa consectetur laudantium repellat, nisi consequuntur deleniti mollitia nihil voluptate quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt sint quo hic doloribus quia nam libero magnam expedita doloremque!</p>
+
+                    <div class="button"><button>Faça seu cadastro</button></div>
+                </div>
+                
+                <div class="course" id="design">
+                    <img src="../images/design-de-interiorres.jpg" alt="Pessoa trabalhando num computador">
+                    <h2>Design de Interiores</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis iure explicabo et impedit praesentium, quidem velit aut, assumenda ipsa ducimus! Voluptatem delectus fugiat vitae in. Impedit quasi asperiores velit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex doloremque reiciendis incidunt architecto ducimus magnam dolores optio sit doloribus. Nam hic rem at incidunt atque ut est nisi? Consequatur non commodi iure beatae nesciunt, ab, eaque error illum ipsa consectetur laudantium repellat, nisi consequuntur deleniti mollitia nihil voluptate quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt sint quo hic doloribus quia nam libero magnam expedita doloremque!</p>
+
+                    <div class="button"><button>Faça seu cadastro</button></div>
+                </div>
+
+                <div class="course" id="web-dev">
+                    <img src="../images/analista-de-sistemas.jpg" alt="Pessoa trabalhando num computador">
+                    <h2>Desenvolvedor de Sistemas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis iure explicabo et impedit praesentium, quidem velit aut, assumenda ipsa ducimus! Voluptatem delectus fugiat vitae in. Impedit quasi asperiores velit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex doloremque reiciendis incidunt architecto ducimus magnam dolores optio sit doloribus. Nam hic rem at incidunt atque ut est nisi? Consequatur non commodi iure beatae nesciunt, ab, eaque error illum ipsa consectetur laudantium repellat, nisi consequuntur deleniti mollitia nihil voluptate quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt sint quo hic doloribus quia nam libero magnam expedita doloremque!</p>
+
+                    <div class="button"><button>Faça seu cadastro</button></div>
+                </div>
+
+                <div class="course" id="engineer">
+                    <img src="../images/analista-de-sistemas.jpg" alt="Pessoa trabalhando num computador">
+                    <h2>Engenharia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis iure explicabo et impedit praesentium, quidem velit aut, assumenda ipsa ducimus! Voluptatem delectus fugiat vitae in. Impedit quasi asperiores velit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex doloremque reiciendis incidunt architecto ducimus magnam dolores optio sit doloribus. Nam hic rem at incidunt atque ut est nisi? Consequatur non commodi iure beatae nesciunt, ab, eaque error illum ipsa consectetur laudantium repellat, nisi consequuntur deleniti mollitia nihil voluptate quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt sint quo hic doloribus quia nam libero magnam expedita doloremque!</p>
+
+                    <div class="button"><button>Faça seu cadastro</button></div>
+                </div>
+
+                <div class="course" id="psicology">
+                    <img src="../images/psicologia.jpg" alt="Pessoa trabalhando num computador">
+                    <h2>Psicologia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis iure explicabo et impedit praesentium, quidem velit aut, assumenda ipsa ducimus! Voluptatem delectus fugiat vitae in. Impedit quasi asperiores velit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex doloremque reiciendis incidunt architecto ducimus magnam dolores optio sit doloribus. Nam hic rem at incidunt atque ut est nisi? Consequatur non commodi iure beatae nesciunt, ab, eaque error illum ipsa consectetur laudantium repellat, nisi consequuntur deleniti mollitia nihil voluptate quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt sint quo hic doloribus quia nam libero magnam expedita doloremque!</p>
+
+                    <div class="button"><button>Faça seu cadastro</button></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy;2024 UNIVERSIDADE. Todos os direitos reservados.</small>
+        </footer>
+    </div>
+</body>
+</html>

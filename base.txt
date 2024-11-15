@@ -22,7 +22,7 @@
             <div class="top-menu">
 
                 <!-- Logo icon -->
-                <a href="" id="logo">
+                <a href="/index.html" id="logo">
                     <span class="material-icons">book</span>
                 </a>
 
@@ -42,7 +42,6 @@
                         <li><a href="./pages/about.html">Sobre</a></li>
                         <li><a href="./pages/courses.html">Cursos</a></li>
                         <li><a href="./pages/contact.html">Contato</a></li>
-                        <li><a href="./pages/partnerships.html">Parcerias</a></li>
                         <li><a href="./pages/localization.html">Localização</a></li>
                     </ul>
                 </nav>

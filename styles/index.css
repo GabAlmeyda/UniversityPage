@@ -13,13 +13,14 @@
 .courses h1 {
     margin-bottom: 20px;
 
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     line-height: 2rem;
 }
 
 .course {
     height: 450px;
-    width: clamp(300px, 100%, 400px);
+    width: clamp(280px, 100%, 400px);
 
     border-radius: 15px;
     padding: 10px;

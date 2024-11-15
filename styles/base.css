@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Global variables*/
 :root {
     --font: "Poppins";
-    --font2: "Quicksand";
+    --font-heading: "Montserrat";
 
     --accent-clr1: #5A00BB;
     --accent-clr1-hover: #470094;
@@ -19,7 +20,7 @@
 
 /* Light theme variables */
 :root {
-    --bg-color: white;
+    --bg-color: rgb(238, 238, 238);
     --bg-color-alt: #C5C8D9;
 
     --font-color: rgb(24, 24, 24);
@@ -28,8 +29,8 @@
 
 /* Dark theme variables */
 .dark-theme {
-    --bg-color: rgb(24, 24, 24);
-    --bg-color-alt: rgb(24, 24, 24);
+    --bg-color: rgb(29, 29, 29);
+    --bg-color-alt: rgb(14, 14, 14);
 
     --font-color: rgb(255, 255, 255);
     --font-color-alt: black;
@@ -60,6 +61,15 @@ body {
         "main"
         "footer"
     ;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
 }
 
 header {
@@ -185,7 +195,8 @@ header .navigation ul li a {
 header h1 {
     margin-bottom: 7px;
 
-    font-size: clamp(2.5rem, 8vw, 3rem);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 7vw, 2.6rem);
     line-height: clamp(2.6rem, 10vw, 3.8rem);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
 }
@@ -212,6 +223,8 @@ section {
 
 footer {
     grid-area: footer;
+
+    margin-bottom: -30px;
 
     background-color: var(--secondary-clr);
 
