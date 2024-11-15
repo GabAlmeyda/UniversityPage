@@ -13,6 +13,10 @@ header h1 {
     text-shadow: none;
 }
 
+.select-input {
+    margin-top: -20px;
+}
+
 #opcoes {
     display: block;
 
@@ -39,8 +43,6 @@ section.courses-wrapper {
 }
 
 .course {
-    display: none;
-
     padding: 15px;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
