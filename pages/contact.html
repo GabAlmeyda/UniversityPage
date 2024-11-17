@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSIDADE</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../styles/contact.css">
+
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Div for the CSS Grid Layout -->
+    <div class="wrapper">
+        <header>
+
+            <!-- Menu bar: contains the logo icon, the icon for switch themes and the menu icon -->
+            <div class="top-menu">
+
+                <!-- Logo icon -->
+                <button class="menu-buttons">
+                    <a href="/index.html" id="logo">
+                        <span class="material-icons">book</span>
+                    </a>
+                </button>
+
+                <!-- Light/dark mode icon -->
+                <button class="menu-buttons">
+                    <span class="material-icons">wb_sunny</span>
+                </button>
+
+                <!-- Menu configuration -->
+                <input type="checkbox" id="toggle-menu">
+                <button class="menu-buttons">
+                    <label for="toggle-menu">
+                        <span class="material-icons">menu</span>
+                    </label>
+                </button>
+                
+                <!-- Navigation bar -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="./about.html">Sobre</a></li>
+                        <li><a href="./courses.html">Cursos</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="./localization.html">Localização</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1>Quer se juntar à nossa universidade?</h1>
+            <p>É só você preencher o campo abaixo para realizar seu pedido de inserção em nossa comunidade.</p>
+            <p>Não vai demorar nada, é seu futuro que está em jogo, então sem pressa!</p>
+        </header>
+
+        <main>
+            <p class="obs">* representa um campo obrigatório</p>
+            <form action="POST" class="form" autocomplete="on">
+                <p class="group required">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" placeholder="Seu nome">
+                </p>
+
+                <p class="group required">
+                    <label for="age">Idade</label>
+                    <input type="number" id="age" name="age" required placeholder="Sua idade" min="0" max="130">
+                </p>
+
+                <p class="group required">
+                    <label for="cpf">CPF:</label>
+                    <input type="number" id="cpf" name="cpf" required autocomplete="tel" placeholder="Ex.: 000.111.222.33" pattern="^(\d{3})\.(\d{3})\.(\d{3})\.-(\d{2})&">
+                </p>
+
+                <p class="group required">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="exemplo@exemplo">
+                </p>
+
+                <p class="group required">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" required autocomplete="email" placeholder="(XX) XXXXX-XXXX" pattern="\((\d{2})\) 9\d{4}-\d{4}">
+                </p>
+
+                <p class="submit">
+                    <input type="submit" value="Se cadastre agora">
+                </p>
+            </form>
+        </main>
+
+        <footer>
+            <small>&copy;2024 UNIVERSIDADE. Todos os direitos reservados. Site criado por Almeyda de Lima.</small>
+        </footer>
+    </div>
+</body>
+</html>

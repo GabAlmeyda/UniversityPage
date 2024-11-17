@@ -1,0 +1,96 @@
+@import url("./base.css");
+
+header {
+    height: auto;
+    padding-bottom: 30px;
+
+    background: var(--bg-color-alt) none;
+
+    color: var(--font-clr);
+}
+
+header :is(h1, p) {
+    text-shadow: none;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+main .obs {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+
+    color: red;
+    font-size: 0.85rem;
+}
+
+.form {
+    padding: 15px;
+}
+
+.form .group {
+    position: relative;
+
+    min-width: 300px;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.form label {
+    display: none;
+}
+
+.form input {
+    width: clamp(260px, 95%, 420px);
+
+    border: none;
+    border-radius: 10px;
+    padding-block: 5px;
+    padding-inline: clamp(10px, 5%, 25px);
+
+    background-color: var(--secondary-clr);
+
+    color: white;
+}
+.form input::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+.form .group.required::after {
+    content: "*";
+
+    position: absolute;
+    top: -15px;
+    right: 0;
+
+    color: red;
+}
+
+.form .submit {
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+.form .submit input{
+    width: clamp(200px, 90%, 350px);
+    
+    border-radius: 25px;
+    
+    background-color: var(--accent-clr1);
+
+    font-size: 1.3rem;
+}
+.form .submit input:hover {
+    background-color: var(--accent-clr1-hover);
+}
+.form .submit input:active {
+    background-color: var(--accent-clr1-active);
+}

@@ -22,27 +22,33 @@
             <div class="top-menu">
 
                 <!-- Logo icon -->
-                <a href="/index.html" id="logo">
-                    <span class="material-icons">book</span>
-                </a>
+                <button class="menu-buttons">
+                    <a href="/index.html" id="logo">
+                        <span class="material-icons">book</span>
+                    </a>
+                </button>
 
                 <!-- Light/dark mode icon -->
-                <span class="material-icons">wb_sunny</span>
+                <button class="menu-buttons">
+                    <span class="material-icons">wb_sunny</span>
+                </button>
 
                 <!-- Menu configuration -->
                 <input type="checkbox" id="toggle-menu">
-                <label for="toggle-menu">
-                    <span class="material-icons">menu</span>
-                </label>
+                <button class="menu-buttons">
+                    <label for="toggle-menu">
+                        <span class="material-icons">menu</span>
+                    </label>
+                </button>
                 
                 <!-- Navigation bar -->
                 <nav class="navigation">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="./pages/about.html">Sobre</a></li>
-                        <li><a href="./pages/courses.html">Cursos</a></li>
-                        <li><a href="./pages/contact.html">Contato</a></li>
-                        <li><a href="./pages/localization.html">Localização</a></li>
+                        <li><a href="./about.html">Sobre</a></li>
+                        <li><a href="./courses.html">Cursos</a></li>
+                        <li><a href="./contact.html">Contato</a></li>
+                        <li><a href="./localization.html">Localização</a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,7 +59,7 @@
         </main>
 
         <footer>
-            <small>&copy;2024 UNIVERSIDADE. Todos os direitos reservados</small>
+            <small>&copy;2024 UNIVERSIDADE. Todos os direitos reservados. Site criado por Almeyda de Lima.</small>
         </footer>
     </div>
 </body>

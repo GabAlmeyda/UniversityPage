@@ -14,7 +14,12 @@ header h1 {
 }
 
 .select-input {
-    margin-top: -20px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.199);
+}
+
+.courses-wrapper {
+    position: relative;
+    z-index: -1;
 }
 
 #opcoes {

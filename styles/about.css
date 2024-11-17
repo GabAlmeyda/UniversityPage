@@ -1,9 +1,12 @@
 @import url("./base.css");
 
 header {
+    z-index: 1;
+
     height: auto;
 
     margin-bottom: 0;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.521);
 
     background: var(--secondary-clr) no-repeat scroll left / cover;
 
@@ -39,26 +42,28 @@ section.values {
     background-color: var(--bg-color-alt);
     
     color: var(--font-color);
-}   
-
-section.inovation h2 {
-    margin-bottom: -7px;
-}
+} 
 
 section.inovation .project {
     width: 100%;
 
     margin: auto;
     border-radius: 15px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
 
-    background-color: white;
+    background-color: var(--bg-color-alt);
+
+    font-weight: 400;
 }
 
-section img {
-    width: 100%;
+section.inovation img {
+    width: calc(100% + 30px);
 
-    margin-top: 45px;
     margin-bottom: 5px;
+    margin-left: -15px;
+    margin-top: -15px;
+    border-radius: 15px 15px 0 0;
 }
 
 section .button {
@@ -88,12 +93,12 @@ section .button button:active {
 }
 
 section hr {
-    height: 1.5px;
+    height: 2px;
     width: calc(100% + 20px);
     margin-left: -10px;
 
     border: none;
-    margin-top: 30px;
+    margin-block: 20px;
 
     background-color: var(--font-color);
 }

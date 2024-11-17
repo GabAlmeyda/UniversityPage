@@ -3,7 +3,7 @@ const menu = document.getElementById("toggle-menu");
 menu.addEventListener("change", openMenu);
 
 function openMenu() {
-    const labelMenu = document.querySelector("#toggle-menu + label span");
+    const labelMenu = document.querySelector("#toggle-menu + button label span");
 
     document.body.classList.toggle("menu-open");
 
