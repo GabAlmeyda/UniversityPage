@@ -1,15 +1,14 @@
-@import url("./base.css");
-
 header {
     height: 30vh;
 
     margin-bottom: 0;
 
     background: var(--bg-color);
+
+    color: var(--font-clr);
 }
 
 header h1 {
-    color: black;
     text-shadow: none;
 }
 
@@ -50,7 +49,7 @@ section.courses-wrapper {
 .course {
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.479);
     margin-bottom: 20px;
 
     background-color: var(--bg-color);

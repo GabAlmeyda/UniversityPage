@@ -1,5 +1,3 @@
-@import url("./base.css");
-
 header {
     height: auto;
     padding-bottom: 30px;
@@ -52,7 +50,7 @@ main .obs {
 
     border: none;
     border-radius: 10px;
-    padding-block: 5px;
+    padding-block: 7px;
     padding-inline: clamp(10px, 5%, 25px);
 
     background-color: var(--secondary-clr);

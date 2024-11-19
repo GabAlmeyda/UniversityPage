@@ -32,7 +32,7 @@
     --bg-color: rgb(29, 29, 29);
     --bg-color-alt: rgb(14, 14, 14);
 
-    --font-color: rgb(255, 255, 255);
+    --font-color: rgb(216, 216, 216);
     --font-color-alt: black;
 }
 
@@ -79,10 +79,6 @@ header {
 
     padding: 15px;
     margin-bottom: 30px;
-
-    background: lightskyblue url("../images/hero-image.jpg") no-repeat scroll right / cover;
-
-    color: var(--font-color-alt);
 }
 
 header .top-menu{
@@ -226,6 +222,6 @@ footer {
 
 footer small{
     text-align: center;
-    color: var(--font-color-alt);
+    color: white;
     font-size: 0.7rem;
 }
