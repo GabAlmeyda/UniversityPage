@@ -23,7 +23,7 @@ header {
 }
 
 .course {
-    height: 450px;
+    min-height: 450px;
     width: clamp(280px, 100%, 400px);
 
     border-radius: 15px;
@@ -36,7 +36,7 @@ header {
 }
 
 .course .image {
-    height: 55%;
+    height: 250px;
 
     margin: -10px;
     border-radius: 15px 15px 0 0;
@@ -64,6 +64,8 @@ header {
 }
 
 .course .button {
+    margin-top: 25px;
+    
     text-align: center;
 }
 
@@ -78,7 +80,7 @@ header {
 
     background-color: var(--accent-clr2);
 
-    color: var(--font-color-alt);
+    color: white;
 }
 
 .course .button button:hover {
@@ -86,6 +88,8 @@ header {
 }
 .courses .button button:active {
     background-color: var(--accent-clr2-active);
+
+    color: rgb(126, 126, 126);
 }
 
 .courses > h2 {
@@ -104,7 +108,7 @@ header {
     margin-inline: calc(
         (100% - clamp(250px, 80%, 350px)) / 2
     );
-    margin-bottom: 30px;
+    margin-block: 30px;
     border: none;
     border-radius: 25px;
     padding: 7px;
@@ -118,7 +122,9 @@ header {
     background-color: var(--accent-clr1-hover);
 }
 .courses .CTA-courses:active {
-    background-color: var(--accent-cl1-active);
+    background-color: var(--accent-clr1-active);
+
+    color: rgb(83, 83, 83);
 }
 
 .invitation .bottom-image {
@@ -157,6 +163,7 @@ header {
     background-color: var(--accent-clr1);
 
     color: white;
+    font: 1rem;
 }
 
 .invitation .CTA-form:hover {
