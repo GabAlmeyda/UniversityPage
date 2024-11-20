@@ -118,21 +118,19 @@ header .top-menu .material-icons:active {
 
 header .top-menu #logo {
     position: relative;
-    z-index: 2;
+    z-index: 1000;
 
     color: white;
 }
-
-
 header #toggle-menu {
     display: none;
 }
 header label[for=toggle-menu] {
     position: relative;
-    z-index: 2;
+    z-index: 1000;
 }
 header .navigation {
-    z-index: 1;
+    z-index: 999;
 
     position: fixed;
     top: 0;
@@ -180,7 +178,7 @@ header h1 {
 
     font-weight: 600;
     font-size: clamp(2.1rem, 7vw, 2.6rem);
-    line-height: clamp(2.6rem, 10vw, 3.8rem);
+    line-height: clamp(2.6rem, 10vw, 3.7rem);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
 }
 
@@ -220,7 +218,11 @@ div.button input {
     border-radius: 25px;
 
     background-color: var(--accent-clr2);
-
+}
+div.button button a,
+div.button input a {
+    text-decoration: none;
+    text-align: center;
     color: white;
     font-size: 1rem;
 }
