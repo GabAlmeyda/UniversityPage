@@ -159,7 +159,7 @@ header .navigation ul{
     align-items: flex-start;
 
     margin: 20px;
-    margin-top: 60px;
+    margin-top: 70px;
 
     list-style-type: none;
 }
@@ -202,6 +202,53 @@ main p {
 
 section {
     padding: 15px;
+}
+
+div.button {
+    text-align: center;
+}
+
+div.button > button {
+    width: clamp(230px, 75%, 330px);
+
+    cursor: pointer;
+
+    padding: 5px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--accent-clr2);
+
+    color: white;
+    font-size: 1rem;
+}
+div.button > button:hover {
+    background-color: var(--accent-clr2-hover);
+}
+div.button > button.active {
+    background-color: var(--accent-clr2-active);
+
+    color: rgb(126, 126, 126);
+}
+
+div.button.CTA-button > button {
+    width: clamp(250px, 80%, 350px);
+
+    margin-block: 30px;
+    padding: 7px;
+
+    background-color: var(--accent-clr1);
+
+    font-size: 1.2rem;
+}
+div.button.CTA-button > button:hover {
+    background-color: var(--accent-clr1-hover);
+}
+div.button.CTA-button > button:active {
+    background-color: var(--accent-clr1-active);
+
+    color: rgb(83, 83, 83);
 }
 
 footer {
