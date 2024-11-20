@@ -25,15 +25,18 @@ header p {
 
 main .obs {
     padding-left: 15px;
-    margin-bottom: 15px;
-    margin-top: -15px;
+    margin-bottom: 0;
 
     color: red;
     font-size: 0.85rem;
+
+    background-color: var(--bg-color);
 }
 
 .form {
     padding: 15px;
+
+    background-color: var(--bg-color);
 }
 
 .form .group {

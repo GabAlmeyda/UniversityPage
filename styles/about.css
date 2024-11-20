@@ -34,6 +34,8 @@ section h2 {
 
 section.geral {
     margin-top: -30px;
+
+    background-color: var(--bg-color);
 }
 
 section.values {
@@ -41,6 +43,10 @@ section.values {
     
     color: var(--font-color);
 } 
+
+section.inovation {
+    background-color: var(--bg-color);
+}
 
 section.inovation .project {
     width: 100%;

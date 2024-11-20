@@ -20,6 +20,7 @@
 
 /* Light theme variables */
 :root {
+    --body-bg-clr: rgb(148, 148, 148);
     --bg-color: rgb(238, 238, 238);
     --bg-color-alt: #C5C8D9;
 
@@ -29,6 +30,7 @@
 
 /* Dark theme variables */
 .dark-theme {
+    --body-bg-clr: black;
     --bg-color: rgb(29, 29, 29);
     --bg-color-alt: rgb(14, 14, 14);
 
@@ -46,8 +48,13 @@
     font-size: 1rem;
 }
 
+html,
 body {
-    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--body-bg-clr);
 
     color: var(--font-color);
 }
@@ -61,6 +68,8 @@ body {
         "main"
         "footer"
     ;
+
+    min-height: 100vh;
 }
 
 h1, 
@@ -78,7 +87,6 @@ header {
     height: 60vh;
 
     padding: 15px;
-    margin-bottom: 30px;
 }
 
 header .top-menu{
@@ -189,6 +197,12 @@ header p {
 
 main {
     grid-area: main;
+
+    min-height: 600px;
+
+    border-radius: 0 0 12px 12px;
+
+    background-color: var(--bg-color-alt);
 }
 
 main p {
@@ -199,7 +213,11 @@ main p {
 }
 
 section {
-    padding: 15px;
+    padding: 30px 15px;
+}
+
+section:last-child {
+    border-radius: 0 0 12px 12px;
 }
 
 div.button {
@@ -248,6 +266,10 @@ div.button.CTA-button input {
 
     font-size: 1.2rem;
 }
+div.button.CTA-button button a,
+div.button.CTA-button input {
+    font-size: 1.3rem;
+}
 div.button.CTA-button button:hover,
 div.button.CTA-button input:hover {
     background-color: var(--accent-clr1-hover);
@@ -260,14 +282,16 @@ div.button.CTA-button input:active {
 }
 
 footer {
+    grid-area: footer;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    grid-area: footer;
     height: 40px;
 
     padding: 2px;
+    margin-top: 20px;
 
     background-color: var(--secondary-clr);
 
