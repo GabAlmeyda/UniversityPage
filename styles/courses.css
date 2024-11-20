@@ -69,28 +69,3 @@ section.courses-wrapper {
 
     font-size: 1.7rem;
 }
-
-.course .button {
-    text-align: center;
-}
-
-.course .button button {
-    cursor: pointer;
-
-    width: clamp(250px, 80%, 300px);
-
-    padding: 5px;
-    border: none;
-    border-radius: 25px;
-
-    background-color: var(--accent-clr2);
-
-    color: white;
-}
-
-.course .button button:hover {
-    background-color: var(--accent-clr2-hover);
-}
-.course .button button:active {
-    background-color: var(--accent-clr2-active);
-}

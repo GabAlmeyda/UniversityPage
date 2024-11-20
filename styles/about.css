@@ -64,32 +64,6 @@ section.inovation img {
     border-radius: 15px 15px 0 0;
 }
 
-section .button {
-    margin: auto;
-
-    text-align: center;
-}
-
-section .button button {
-    cursor: pointer;
-
-    width: clamp(250px, 80%, 300px);
-
-    padding: 5px;
-    border-radius: 25px;
-    border: none;
-
-    background-color: var(--accent-clr2);
-
-    color: white;
-}
-section .button button:hover {
-    background-color: var(--accent-clr2-hover);
-}
-section .button button:active {
-    background-color: var(--accent-clr2-active);
-}
-
 section hr {
     height: 2px;
     width: calc(100% + 20px);

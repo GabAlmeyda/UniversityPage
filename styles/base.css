@@ -208,7 +208,8 @@ div.button {
     text-align: center;
 }
 
-div.button > button {
+div.button button,
+div.button input {
     width: clamp(230px, 75%, 330px);
 
     cursor: pointer;
@@ -223,16 +224,19 @@ div.button > button {
     color: white;
     font-size: 1rem;
 }
-div.button > button:hover {
+div.button button:hover,
+div.button input:hover {
     background-color: var(--accent-clr2-hover);
 }
-div.button > button.active {
+div.button button:active,
+div.button input:active {
     background-color: var(--accent-clr2-active);
 
     color: rgb(126, 126, 126);
 }
 
-div.button.CTA-button > button {
+div.button.CTA-button button,
+div.button.CTA-button input {
     width: clamp(250px, 80%, 350px);
 
     margin-block: 30px;
@@ -242,10 +246,12 @@ div.button.CTA-button > button {
 
     font-size: 1.2rem;
 }
-div.button.CTA-button > button:hover {
+div.button.CTA-button button:hover,
+div.button.CTA-button input:hover {
     background-color: var(--accent-clr1-hover);
 }
-div.button.CTA-button > button:active {
+div.button.CTA-button button:active,
+div.button.CTA-button input:active {
     background-color: var(--accent-clr1-active);
 
     color: rgb(83, 83, 83);

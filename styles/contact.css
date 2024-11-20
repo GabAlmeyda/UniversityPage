@@ -73,22 +73,4 @@ main .obs {
 
 .form .submit {
     margin-top: 40px;
-
-    text-align: center;
-}
-
-.form .submit input{
-    width: clamp(200px, 90%, 350px);
-    
-    border-radius: 25px;
-    
-    background-color: var(--accent-clr1);
-
-    font-size: 1.3rem;
-}
-.form .submit input:hover {
-    background-color: var(--accent-clr1-hover);
-}
-.form .submit input:active {
-    background-color: var(--accent-clr1-active);
 }
