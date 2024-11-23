@@ -1,0 +1,26 @@
+.courses-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.courses-wrapper .course {
+    min-width: 300px;
+
+    margin-right: 15px;
+}
+
+.courses-wrapper .course:last-child {
+    margin-right: 0;
+}
+
+.courses > h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: 2.5rem;
+}
+
+.invitation .bottom-image {
+    height: 90vh;
+}

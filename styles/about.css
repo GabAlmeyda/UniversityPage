@@ -48,8 +48,13 @@ section.inovation {
     background-color: var(--bg-color);
 }
 
+section.inovation .projects-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 section.inovation .project {
-    width: 100%;
+    width: clamp(280px, 100%, 400px);
 
     margin: auto;
     border-radius: 15px;

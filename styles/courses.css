@@ -12,6 +12,10 @@ header h1 {
     text-shadow: none;
 }
 
+main {
+    background-color: var(--bg-color);
+}
+
 .select-input {
     position: relative;
     z-index: 1;
@@ -19,6 +23,10 @@ header h1 {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.199);
 
     background-color: var(--bg-color-alt);
+}
+
+.select-input label {
+    font-size: 1.1rem;
 }
 
 #opcoes {
@@ -57,7 +65,7 @@ section.courses-wrapper {
 
 .course img {
     width: calc(100% + 30px);
-    height: 220px;
+    height: 40vh;
 
     margin-left: -15px;
     margin-top: -15px;
@@ -68,4 +76,8 @@ section.courses-wrapper {
     margin-bottom: 15px;
 
     font-size: 1.7rem;
+}
+
+.course .button {
+    margin-top: 40px;
 }

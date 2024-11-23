@@ -1,0 +1,31 @@
+header h1 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.select-input label{
+    margin-bottom: 15px;
+
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.course {
+    width: clamp(600px, 85vw, 900px);
+
+    margin: auto;
+}
+
+.course img {
+    height: 80vh;
+}
+
+.course .button button{
+    width: 400px;
+
+    padding-block: 10px;
+}
+
+.course .button button a {
+    font-size: 1.5rem;
+}

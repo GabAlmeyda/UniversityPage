@@ -200,8 +200,6 @@ main {
 
     min-height: 600px;
 
-    border-radius: 0 0 12px 12px;
-
     background-color: var(--bg-color-alt);
 }
 
@@ -214,10 +212,6 @@ main p {
 
 section {
     padding: 30px 15px;
-}
-
-section:last-child {
-    border-radius: 0 0 12px 12px;
 }
 
 div.button {

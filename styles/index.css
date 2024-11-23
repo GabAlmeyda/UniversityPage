@@ -11,7 +11,14 @@ header {
 }
 
 .courses {
+    display: flex;
+    flex-flow: column nowrap;
+
     background-color: var(--bg-color-alt);
+}
+.courses-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .courses h1 {
@@ -69,6 +76,10 @@ header {
 
     font-size: 1.6rem;
     text-align: center;
+}
+
+.courses .CTA-button {
+    margin-top: 50px;
 }
 
 .invitation {

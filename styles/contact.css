@@ -21,6 +21,8 @@ header h1 {
 
 header p {
     margin-bottom: 10px;
+
+    font-size: 1.1rem;
 }
 
 main .obs {
@@ -40,8 +42,6 @@ main .obs {
 }
 
 .form .group {
-    position: relative;
-
     min-width: 300px;
     margin-bottom: 15px;
 
@@ -68,12 +68,16 @@ main .obs {
     color: rgb(180, 180, 180);
 }
 
-.form .group.required::after {
+.form .group.required span {
+    position: relative;
+}
+
+.form .group.required span::after {
     content: "*";
 
     position: absolute;
-    top: -15px;
-    right: 0;
+    top: -20px;
+    right: -10px;
 
     color: red;
 }
