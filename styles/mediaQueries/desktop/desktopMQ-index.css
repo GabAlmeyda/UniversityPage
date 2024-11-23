@@ -1,3 +1,7 @@
+header {
+    height: 70vh;
+}
+
 .courses-wrapper {
     display: flex;
     flex-direction: row;
@@ -5,9 +9,18 @@
 }
 
 .courses-wrapper .course {
+    position: relative;
+
     min-width: 300px;
 
     margin-right: 15px;
+
+    transition: 0.3s;
+}
+.courses-wrapper .course:hover {
+    box-shadow: 0px 4px 7px 5px rgba(0, 0, 0, 0.575);
+
+    transform: translateY(-10px);
 }
 
 .courses-wrapper .course:last-child {

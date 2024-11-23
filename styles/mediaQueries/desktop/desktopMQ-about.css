@@ -27,6 +27,13 @@ section.inovation .project {
     height: 700px;
 
     margin-inline: 0;
+
+    transition: 0.3s;
+}
+section.inovation .project:hover {
+    box-shadow: 0px 4px 7px 5px rgba(0, 0, 0, 0.575);
+
+    transform: translateY(-10px);
 }
 
 section.inovation .project img {

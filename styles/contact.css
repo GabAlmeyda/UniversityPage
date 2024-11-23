@@ -25,6 +25,10 @@ header p {
     font-size: 1.1rem;
 }
 
+main {
+    min-height: auto;
+}
+
 main .obs {
     padding-left: 15px;
     margin-bottom: 0;
