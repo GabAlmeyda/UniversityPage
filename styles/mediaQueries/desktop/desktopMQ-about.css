@@ -2,6 +2,17 @@ header {
     height: 40vh;
 }
 
+header .navigation li:nth-child(2) a {
+    font-weight: bold;
+}
+header .navigation li:nth-child(2) a::after {
+    height: 3px;
+
+    background-color: white;
+
+    transform: scaleX(1);
+}
+
 header h1 {
     margin-top: 0;
 }

@@ -2,6 +2,17 @@ header {
     height: 70vh;
 }
 
+header .navigation li:nth-child(1) a {
+    font-weight: bold;
+}
+header .navigation li:nth-child(1) a::after {
+    height: 3px;
+
+    background-color: white;
+
+    transform: scaleX(1);
+}
+
 .courses-wrapper {
     display: flex;
     flex-direction: row;

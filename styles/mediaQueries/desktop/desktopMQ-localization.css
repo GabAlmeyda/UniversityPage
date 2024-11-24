@@ -1,0 +1,10 @@
+header .navigation li:nth-child(5) a {
+    font-weight: bold;
+}
+header .navigation li:nth-child(5) a::after {
+    height: 3px;
+
+    background-color: white;
+
+    transform: scaleX(1);
+}
